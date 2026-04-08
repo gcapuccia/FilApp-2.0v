@@ -14,9 +14,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+/***********
+ * LANDING *
+ ***********/
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
+
+//TODO agregar rutas para las secciones de la landing page
+Route::get('/faq', function () {
+    return view('faq');
+});
+
+
+/**************************
+ * FORMULARIO DEL CLIENTE *
+ **************************/
+Route::get('/formcliente', function () {
+    return view('formcliente');
+});
+//TODO falta agregar controlador post para agregar cliente en espera
+
+//TODO agregaria un formulario solo de 4 botones de servicio para q no sea un cliente sino un numero (ej: T34)
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -1,0 +1,99 @@
+@extends('layouts.plantillalanding')
+    @section('contenido')
+
+    <section class="faq-section bg-light py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+                    <div class="accordion" id="faqAccordion">
+            
+                        <!-- ¿Cómo funciona el sistema de filas online? -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                    ¿Cómo funciona el sistema de filas online?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nuestro sistema permite a tus clientes registrarse en una fila utilizando un código QR único. Una vez registrados, pueden monitorear su turno en tiempo real desde cualquier dispositivo, reduciendo el tiempo de espera físico y mejorando la experiencia del cliente.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- ¿Cómo genero un código QR? -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    ¿Cómo genero un código QR?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Generar un código QR es muy sencillo. Desde el panel de administración, puedes crear y personalizar códigos QR para cada servicio o fila. Una vez generado, puedes imprimirlo o compartirlo digitalmente con tus clientes.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- ¿Es compatible con dispositivos móviles? -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    ¿Es compatible con dispositivos móviles?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, nuestro software está diseñado para funcionar perfectamente en dispositivos móviles, tablets y computadoras. Esto asegura que tanto tú como tus clientes puedan acceder al sistema desde cualquier lugar.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- ¿Puedo personalizar el software para mi negocio? -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                    ¿Puedo personalizar el software para mi negocio?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Por supuesto. Puedes ajustar el software según las necesidades de tu negocio, incluyendo la personalización de la interfaz, los tipos de servicios ofrecidos y las notificaciones que reciben tus clientes.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- ¿Requiere capacitación para usarlo? -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    ¿Requiere capacitación para usarlo?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No es necesaria una capacitación extensa. La interfaz es intuitiva y fácil de usar. Sin embargo, ofrecemos guías y soporte para ayudarte a aprovechar todas las funcionalidades del sistema.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- ¿Es necesario que mis clientes descarguen una aplicación? -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                                    ¿Es necesario que mis clientes descarguen una aplicación?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No, tus clientes no necesitan descargar una aplicación. Pueden acceder al sistema y gestionar sus turnos directamente desde su navegador web escaneando el código QR proporcionado.
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+@endsection

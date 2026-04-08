@@ -1,0 +1,177 @@
+
+    @extends('layouts.landing.plantillalanding')
+    @section('contenido')
+
+    <!-- TODO MEJORARIA LANDING PAGE, AGREGARIA MAS SECCIONES, IMAGENES, ETC. PERO POR AHORA DEJO ESTO PARA QUE NO ESTE TAN VACIA LA PAGINA -->
+        <!-- Masthead-->
+        <header class="masthead" id="contacto">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white" >
+                            <!-- Page heading-->
+                            <h1 class="mb-5">Ponte en contacto con nuestro equipo para adquirir nuestras aplicaciones!</h1>
+                            <!-- Signup form-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <!-- Email address input-->
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Ingresa tu email" data-sb-validations="required,email" />
+                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Ingrese un Email valido</div>
+
+                                    </div>
+                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                                </div>
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Enviado correctamente</div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Ha habido un error</div></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Icons Grid-->
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
+                            <h3>Totalmente responsive</h3>
+                            <p class="lead mb-0">Diseño que se adapta a todo tipo de pantallas</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
+                            <h3>Tecnologico</h3>
+                            <p class="lead mb-0">Hecho con las ultimas tecnologias</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
+                            <h3>Facil de usar</h3>
+                            <p class="lead mb-0">Facil de usar para todo tipo de personas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image Showcases-->
+        <section class="showcase" id="producto">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Filas online</h2>
+                        <p class="lead mb-0">Di adiós a las filas desordenadas. Nuestro software te permite gestionar y asignar turnos mediante códigos QR, mejorando la experiencia del cliente y maximizando la productividad.</p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/ej.png')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Maneja tu negocio</h2>
+                        <p class="lead mb-0">Con nuestra app de manejo de tickets y empleados, controla cada aspecto de tu flujo de trabajo. Desde asignación de turnos hasta la atención rápida, todo en una plataforma intuitiva.</p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/ej2.png')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Facil de usar</h2>
+                        <p class="lead mb-0">Nuestro software revolucionario te brinda el control total sobre la asignación de turnos y la gestión de tus empleados, permitiéndote un manejo sin interrupciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials-->
+        <section class="testimonials text-center bg-light" id="Clientes">
+            <div class="container">
+                <h2 class="mb-5">Nuestros clientes</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/logo.png" alt="..." />
+                            <h5>Espresso Americano</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/logo1.png" alt="..." />
+                            <h5>Mostaza</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/logo2.jpg" alt="..." />
+                            <h5>Starbucks Corporation</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action-->
+        <section class="call-to-action text-white text-center" id="signup">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <h2 class="mb-4">Estas interesado? ¡contactanos!</h2>
+                        <!-- Signup form-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                            <!-- Email address input-->
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Ingresa un email" data-sb-validations="required,email" />
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Ingresa un Email valido</div>
+                                </div>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    <p>To activate this form, sign up at</p>
+                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    @endsection
