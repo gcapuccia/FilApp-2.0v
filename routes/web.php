@@ -37,6 +37,7 @@ Route::get('/formcliente', function () {
 });
 //TODO falta agregar controlador post para agregar cliente en espera
 
+
 //TODO agregaria un formulario solo de 4 botones de servicio para q no sea un cliente sino un numero (ej: T34)
 
 Route::get('/dashboard', function () {
