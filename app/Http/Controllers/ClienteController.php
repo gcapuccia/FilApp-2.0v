@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cliente;
 use Illuminate\Http\Request;
+use App\Models\Motivo;
 
 class ClienteController extends Controller
 {
@@ -20,7 +21,8 @@ class ClienteController extends Controller
      */
     public function create()
     {
-        //
+        $motivos = Motivo::all();
+        return view('formcliente', ['motivos' => $motivos]);
     }
 
     /**
@@ -28,7 +30,7 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

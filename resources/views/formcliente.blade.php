@@ -11,7 +11,8 @@
            <h2 class="text-black mt-3 align-items-center">¡Bienvenido!</h2>
           </div>
           
-          <form>
+          <form action="TODO: agregar confirmacion" method="post">
+             @csrf
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" placeholder="Juan ">
@@ -24,17 +25,12 @@
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" placeholder="ejemplo@fillap.com">
             </div>
-<!--             <div class="mb-3">
-              <label for="comentarios" class="form-label">Comentarios</label>
-              <textarea class="form-control" id="comentarios" rows="2" placeholder=""></textarea>
-            </div> -->
             <div class="mb-3">
               <!-- <label for="motivo" class="form-label">Motivo de su visita</label> -->
                 <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    @foreach($motivos as $motivo)
+                        <option value="{{ $motivo->id }}">{{ $motivo->motivo }}</option>
+                    @endforeach
                 </select>
             </div>
             <button type="submit" class="btn btn-custom w-100">Registrarse</button>

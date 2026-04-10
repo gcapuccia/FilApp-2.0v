@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ClienteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,14 +32,18 @@ Route::get('/faq', function () {
 /**************************
  * FORMULARIO DEL CLIENTE *
  **************************/
-Route::get('/formcliente', function () {
-    return view('formcliente');
-});
-//TODO falta agregar controlador post para agregar cliente en espera
-
+Route::get('/formcliente', [ClienteController::class, 'create']);
+Route::post('/formcliente/store', [ClienteController::class, 'store']);
 
 //TODO agregaria un formulario solo de 4 botones de servicio para q no sea un cliente sino un numero (ej: T34)
 
+
+//TODO: falta agregar middleware para la autenticacion punto s04
+//https://claude.ai/public/artifacts/bfa1d48c-0e60-47eb-a7f9-b65195bf5ade
+
+
+
+//AUTENTICACION
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
