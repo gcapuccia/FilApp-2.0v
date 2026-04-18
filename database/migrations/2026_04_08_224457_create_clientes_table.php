@@ -16,10 +16,16 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('apellido');
             $table->unsignedBigInteger('motivo_id'); // relación con motivos
-            $table->timestamps();
-
-            // Clave foránea
             $table->foreign('motivo_id')->references('id')->on('motivos')->onDelete('cascade');
+            $table->string('mail')->nullable();
+            $table->dateTime('ingreso')->useCurrent();
+            $table->dateTime('inicioAtencion')->nullable();
+            $table->dateTime('finAtencion')->nullable();
+            // Clave foránea
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null'); //asegura de que si el cliente no existe mas quede como null
+            $table->integer('enEspera');
+            $table->timestamps();
         });
     }
 
